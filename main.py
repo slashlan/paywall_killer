@@ -8,6 +8,7 @@ from trafilatura import fetch_url, bare_extraction
 import spacy
 
 # Load the multilingual model
+spacy.cli.download("xx_sent_ud_sm")
 nlp = spacy.load("xx_sent_ud_sm")
 
 
