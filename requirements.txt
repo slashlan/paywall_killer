@@ -1,0 +1,7 @@
+Pillow==9.5.0
+numpy==1.25.1
+pandas==2.0.3
+streamlit==1.25.0
+trafilatura==1.6.2
+spacy==3.7.2
+xx_sent_ud_sm @ https://github.com/explosion/spacy-models/releases/tag/xx_sent_ud_sm-3.7.0
