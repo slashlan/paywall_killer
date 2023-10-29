@@ -1,5 +1,5 @@
 # Paywall Killer
-# <img src="DataSnap_logo_small.png" width="500" height="250" />
+# <img src="Paywall_killer_banner.png" width="600" height="300" />
 
 Streamlit app to remove paywall and read full body text of articles from The Economist, Il Corriere della Sera, etc.
 
