@@ -79,7 +79,7 @@ dark = '''
 st.markdown(dark, unsafe_allow_html=True)
 
 # Initialize app
-image_title = Image.open('C:/Users/marco/PycharmProjects/Reportailor/Paywall_killer_banner.png')
+image_title = Image.open('/app/paywall_killer/Paywall_killer_banner.png')
 
 col1, col2, col3 = st.columns([0.5, 6, 0.5])
 with col1:
