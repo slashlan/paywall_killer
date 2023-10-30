@@ -64,7 +64,7 @@ def article_reader(article_url):
     # body = "  ".join(add_spacing)
 
     # Text in white for st.markdown
-    output = "''':white[" + output + "]'''"
+    output = "''':red[" + output + "]'''"
     
     return title, output
 
