@@ -62,9 +62,6 @@ def article_reader(article_url):
 
     # add_spacing = insert_elements_after_nth(sentences, 3, "\n  \n")
     # body = "  ".join(add_spacing)
-
-    # Text in white for st.markdown
-    output = "''':red[" + output + "]'''"
     
     return title, output
 
