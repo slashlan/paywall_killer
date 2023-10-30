@@ -100,5 +100,5 @@ link_input = st.text_input('', placeholder="Paste article link")
 if st.button('Read', key='submit_article') or link_input:
     title, body = article_reader(link_input)
     st.title(title)
-    st.markdown(:white[body])
+    st.markdown(":white[" + body + "]")
     # " ".join(body)
