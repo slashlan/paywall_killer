@@ -88,7 +88,7 @@ with col1:
 
 with col2:
     # st.markdown("<h1 style='text-align: center; color: black;'>Paywall Killer</h1>", unsafe_allow_html=True)
-    st.image(image_title, width=600)
+    st.image(image_title, width=300)
 
 with col3:
     st.write("")
@@ -100,5 +100,5 @@ link_input = st.text_input('', placeholder="Paste article link")
 if st.button('Read', key='submit_article') or link_input:
     title, body = article_reader(link_input)
     st.title(title)
-    st.markdown(body)
+    st.markdown(:white[body])
     # " ".join(body)
