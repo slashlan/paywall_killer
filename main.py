@@ -63,6 +63,9 @@ def article_reader(article_url):
     # add_spacing = insert_elements_after_nth(sentences, 3, "\n  \n")
     # body = "  ".join(add_spacing)
 
+    # Text in white for st.markdown
+    output = ":white[" + output + "]"
+    
     return title, output
 
 
@@ -100,5 +103,5 @@ link_input = st.text_input('', placeholder="Paste article link")
 if st.button('Read', key='submit_article') or link_input:
     title, body = article_reader(link_input)
     st.title(title)
-    st.markdown(''':white[''' + body + ''']''')
+    st.markdown(body)
     # " ".join(body)
