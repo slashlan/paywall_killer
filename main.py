@@ -35,7 +35,7 @@ def article_reader(article_url):
     title = result['title']
 
     # Get body article
-    full_text = result['text'].split('\n', 1)[1:]
+    full_text = result['text'].split('\n', 1)[0] + "\n " + result['text'].split('\n', 1)[1:]
     full_text = " ".join(full_text)
 
     # Process text (split in sentences & paragraphs)
