@@ -32,7 +32,7 @@ def article_reader(article_url):
     result = bare_extraction(downloaded, favor_precision=True)
 
     # Get title
-    title = result['text'].split('\n', 1)[0]
+    title = result['title']
 
     # Get body article
     full_text = result['text'].split('\n', 1)[1:]
