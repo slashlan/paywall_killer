@@ -4,7 +4,7 @@
 
 import streamlit as st
 from PIL import Image
-from trafilatura import fetch_url, bare_extraction
+from trafilatura import fetch_url, bare_extraction, extract
 import spacy
 
 # Load the multilingual model
@@ -66,6 +66,14 @@ def article_reader(article_url):
     return title, output
 
 
+# Extract text article in HTML (all elements)
+def article_reader_html(article_url):
+    downloaded = fetch_url(article_url)
+    body = extract(downloaded)
+    
+    return body
+
+
 # START APP
 
 # Dark background
@@ -98,7 +106,8 @@ link_input = st.text_input('', placeholder="Paste article link")
 
 # Process article
 if st.button('Read', key='submit_article') or link_input:
-    title, body = article_reader(link_input)
-    st.title(title)
+    # title, body = article_reader(link_input)
+    # st.title(title)
+    body = article_reader_html(link_input)
     st.markdown(body)
     # " ".join(body)
