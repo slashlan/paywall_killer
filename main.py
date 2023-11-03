@@ -69,7 +69,7 @@ def article_reader(article_url):
 # Extract text article in HTML (all elements)
 def article_reader_html(article_url):
     downloaded = fetch_url(article_url)
-    body = extract(downloaded, include_formatting=True, include_links=True, include_images=True, include_comments=False)
+    body = extract(downloaded, include_formatting=False, include_links=True, include_images=True, include_comments=False)
     
     return body
 
